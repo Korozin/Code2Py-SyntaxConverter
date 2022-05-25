@@ -1,5 +1,5 @@
 # Code2Py-SyntaxConverter
-Converts RAM writes into usable python ssyntax for use with TCPGecko.py
+Converts RAM writes into usable python syntax for use with TCPGecko.py
 
 
 ### Usage
