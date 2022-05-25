@@ -16,12 +16,10 @@ while not os.path.isfile(path):
 with open(path,encoding="utf-8") as f:
     src = f.readlines()
 
-print('\nConverted: ')
-print('')
 for line in src:
   line_parts = line.split()
-  print(f'tcp.pokemem(0x{line_parts[0]}, 0x{line_parts[1]})')
+  file = open('output.txt', "a")
+  file.write(f'tcp.pokemem(0x{line_parts[0]}, 0x{line_parts[1]})\n')
+  file.close()
 
-
-pyperclip.copy(f'tcp.pokemem(0x{line_parts[0]}, 0x{line_parts[1]})')
-spam = pyperclip.paste()
+print('\nConverted, see output.txt')
